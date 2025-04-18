@@ -14,7 +14,7 @@ THINGSPEAK_READ_API_KEY = "EI4T74BNSK0H4ZZ3"
 THINGSPEAK_ALERTS_URL = "https://api.thingspeak.com/channels/2924683/feeds/last.json"
 
 DHT_PIN = 4
-CHECK_INTERVAL = 15
+CHECK_INTERVAL = 20
 
 # Initialize hardware
 dht_sensor = dht.DHT11(Pin(DHT_PIN))
