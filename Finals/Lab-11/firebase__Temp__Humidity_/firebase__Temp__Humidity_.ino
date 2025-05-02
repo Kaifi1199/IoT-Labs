@@ -117,7 +117,7 @@ void sendToFirebase(float temp, float humidity) {
   }
 
   char timeStr[30];
-  strftime(timeStr, sizeof(timeStr), "%Y-%m-%d %H:%M:%S", &timeinfo);
+  strftime(timeStr, sizeof(timeStr), "%Y-%m-%d %I:%M:%S %p", &timeinfo);
 
   String url = "https://" + FIREBASE_HOST + FIREBASE_PATH + ".json?auth=" + FIREBASE_AUTH;
 
